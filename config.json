@@ -1,0 +1,14 @@
+{
+    "express_server": {
+        "HOST": "localhost",
+        "PORT": "3030"
+    },
+    "mysql_connection": {
+        "DB_HOST": "localhost",
+        "DB_PORT": "3306",
+        "DB_NAME":"ebank_db",
+        "DB_USER_NAME":"root",
+        "DB_USER_PASSWORD":"qwerty"
+    },
+    "allowed_types" : ["boolean", "string", "number"]
+}

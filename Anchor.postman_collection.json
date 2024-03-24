@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "4ac25906-70f4-4782-941b-f472dd5b0bc2",
+		"name": "Anchor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3018456"
+	},
+	"item": [
+		{
+			"name": "Sheets",
+			"item": [
+				{
+					"name": "get sheet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/sheets/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"sheets",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create sheet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"columns\" : [\n       {\"name\":\"A\", \"type\":\"boolean\"},\n       {\"name\": \"B\", \"type\" : \"string\"}\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/api/sheets/",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"sheets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "set cell",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"A\",\n    \"number\": \"6\",\n    \"_value\": \"lookup('A',8)\",\n    \"value\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/api/sheets/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"sheets",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
