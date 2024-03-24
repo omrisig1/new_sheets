@@ -2,7 +2,7 @@ import {getDB} from '../../db/db.connection.js';
 import log from '@ajar/marker';
 import {Cell, Schema, Sheet} from "../../types/types";
 import {getFunctionParameters, isLookUp, lookup} from "./sheets.util.js";
-import validationException from "../../exceptions/validation.exception";
+import validationException from "../../exceptions/validation.exception.js";
 class SheetsService {
 
     createSheet(json: Schema) {

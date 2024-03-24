@@ -10,7 +10,7 @@
     "build-dev2": "npm run build && concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
     "dev": "nodemon",
     "test": "node_modules/nyc/bin/nyc.js --all  node_modules/mocha/bin/mocha.js ./tests/**/*.spec.ts --exit",
-    "start": "NODE_ENV=production node dist/index.js",
+    "start": "tsc && swc src -d dist && NODE_ENV=production node dist/index.js",
     "lint": "eslint src/**/*.ts tests/**/*.ts  --fix",
     "format": "prettier src/**/*.ts --write",
     "coverage": "rm -rf coverage && nyc mocha",
