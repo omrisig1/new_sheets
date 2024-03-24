@@ -18,8 +18,7 @@ To run My App locally, follow these steps:
 2. Open Postman and import the provided collection located in the project directory(Anchor.postman_collection), or just run according to the following instructions.
 3. Use the following endpoints:cd
 
-### GET
-- **Get Sheet:** `localhost:3030/api/sheets/1`
+Notice the sheet id will be returned on the Create Sheet response.
 
 ### POST
 - **Create Sheet:** `localhost:3030/api/sheets`
@@ -39,8 +38,11 @@ To run My App locally, follow these steps:
       }
       ```
 
+### GET
+- **Get Sheet:** `localhost:3030/api/sheets/:id`
+
 ### PUT
-- **Set Cell:** `localhost:3030/api/sheets/1`
+- **Set Cell:** `localhost:3030/api/sheets/:id`
     - Body:
       ```json
       {
