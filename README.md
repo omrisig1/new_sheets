@@ -6,7 +6,7 @@ Welcome to My App! This application is built with Express.js and does amazing th
 
 To install My App, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/omrisig1/my-anchor-app.git`
+1. Clone the repository: `git clone https://github.com/omrisig1/new-sheets.git`
 2. Navigate to the project directory: `cd Anchor`
 3. Install dependencies: `npm install`
 
